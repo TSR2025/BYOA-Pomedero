@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <div class="timer">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start" class="control-btn primary-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="reset" class="control-btn">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="work">
+                <i class="fas fa-laptop-code"></i>
+                Focus Session
+            </button>
+            <button class="mode-btn" data-mode="break">
+                <i class="fas fa-coffee"></i>
+                Break Time
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
